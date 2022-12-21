@@ -44,4 +44,4 @@ jobs:
 
       - name: Run pre-commit
         run: |
-          poetry run pre-commit --all-files
+          poetry run pre-commit run --all-files
