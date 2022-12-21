@@ -43,4 +43,5 @@ jobs:
           poetry run python -m pytest -sxv
 
       - name: Run pre-commit
-        uses: pre-commit/action@v3.0.0
+        run: |
+          poetry run pre-commit --all-files
