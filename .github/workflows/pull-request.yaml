@@ -36,11 +36,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m poetry install
+          poetry install
 
       - name: Run tests
         run: |
-          python -m poetry run python -m pytest -sxv
+          poetry run python -m pytest -sxv
 
       - name: Run pre-commit
         uses: pre-commit/action@v3.0.0
